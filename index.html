@@ -12,8 +12,10 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #222831; /* Dark grey background */
+            background-color: #111; /* Very dark background */
             color: #EEEEEE; /* White/Light grey for general text */
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path d="M0,20 C20,10 40,30 50,20 C70,10 90,30 100,20" fill="none" stroke="%2300F5D4" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="1, 8"/><path d="M0,50 C20,60 40,40 50,50 C70,60 90,40 100,50" fill="none" stroke="%2300F5D4" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="1, 8"/><path d="M0,80 C20,70 40,90 50,80 C70,70 90,90 100,80" fill="none" stroke="%2300F5D4" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="1, 8"/></svg>');
+            background-size: 80px 80px;
         }
         .text-neon-blue {
             color: #00F5D4; /* Greenish-blue accent color */
@@ -23,7 +25,7 @@
 <body class="antialiased">
 
     <!-- Header Section -->
-    <header class="bg-[#393E46] shadow-sm py-6"> <!-- Darker grey header -->
+    <header class="bg-[#222] shadow-sm py-6"> <!-- Darker grey header -->
         <div class="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
             <div class="text-center sm:text-left mb-4 sm:mb-0">
                 <h1 class="text-3xl font-bold text-white">Nguyễn Trọng Minh</h1>
@@ -43,18 +45,18 @@
     <main class="container mx-auto px-4 mt-8">
 
         <!-- Summary Section -->
-        <section class="bg-[#393E46] rounded-lg shadow-lg p-8 mb-8">
+        <section class="bg-[#393E46]/80 rounded-lg shadow-lg p-8 mb-8">
             <h2 class="text-2xl font-bold text-neon-blue mb-4">Summary</h2>
             <p class="text-gray-200 leading-relaxed">
                 A dedicated 3rd-year student with a strong academic foundation in Artificial Intelligence. Proactively exploring Cloud/DevOps principles (containerization, CI/CD, infrastructure management) and possessing foundational understanding in AI/ML development (Python, AI frameworks, model deployment). I am eager to apply and further develop these interdisciplinary skills, contributing to a dynamic engineering team focused on building scalable intelligent solutions.
             </p>
         </section>
 
-        <section id="projects" class="bg-[#393E46] rounded-lg shadow-lg p-8 mb-8">
+        <section id="projects" class="bg-[#393E46]/80 rounded-lg shadow-lg p-8 mb-8">
             <h2 class="text-2xl font-bold text-neon-blue mb-6">Projects</h2>
             
             <!-- Motorbike Detection Project -->
-            <div class="mb-8 p-6 bg-gray-700 rounded-lg border border-gray-600">
+            <div class="mb-8 p-6 bg-gray-700/80 rounded-lg border border-gray-600">
                 <h3 class="text-xl font-semibold text-white mb-2">Motorbike Detection with YOLOv8 & Streamlit</h3>
                 <p class="text-gray-200 leading-relaxed mb-4">
                     Engineered and deployed an end-to-end motorbike detection application using Python, a custom-trained YOLOv8 model, and the Streamlit framework. This project demonstrates proficiency in computer vision and the full machine learning project lifecycle, from data curation on **Roboflow** to model deployment on Streamlit Cloud.
@@ -73,7 +75,7 @@
             </div>
 
             <!-- Other Projects Section (You can add more here) -->
-            <div class="mb-8 p-6 bg-gray-700 rounded-lg border border-gray-600">
+            <div class="mb-8 p-6 bg-gray-700/80 rounded-lg border border-gray-600">
                 <h3 class="text-xl font-semibold text-white mb-2">IBM Data Engineering Capstone Project Replication</h3>
                 <p class="text-gray-200 leading-relaxed mb-4">
                     A hands-on replication of the Coursera Data Engineering Capstone Project labs, simulating cloud-based data pipelines using Docker, MySQL, and Python scripting. This project demonstrates my understanding of ETL processes, data warehousing, and containerization.
@@ -89,7 +91,7 @@
                 </a>
             </div>
             
-            <div class="mb-8 p-6 bg-gray-700 rounded-lg border border-gray-600">
+            <div class="mb-8 p-6 bg-gray-700/80 rounded-lg border border-gray-600">
                 <h3 class="text-xl font-semibold text-white mb-2">Animal Image Classification with CNN</h3>
                 <p class="text-gray-200 leading-relaxed mb-4">
                     Developed a Convolutional Neural Network (CNN) from scratch using TensorFlow for image classification, achieving 74% validation accuracy. This project deepened my understanding of deep learning architectures and hyperparameter tuning.
@@ -107,7 +109,7 @@
 
         </section>
 
-        <section id="skills" class="bg-[#393E46] rounded-lg shadow-lg p-8 mb-8">
+        <section id="skills" class="bg-[#393E46]/80 rounded-lg shadow-lg p-8 mb-8">
             <h2 class="text-2xl font-bold text-neon-blue mb-6">Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Skill Category 1 -->
@@ -151,7 +153,7 @@
     </main>
 
     <!-- Footer -->
-    <footer id="contact" class="bg-gray-900 text-white py-8 mt-12">
+    <footer id="contact" class="bg-gray-900/80 text-white py-8 mt-12">
         <div class="container mx-auto px-4 text-center">
             <h3 class="text-xl font-semibold mb-4 text-neon-blue">Contact Me</h3>
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4 text-sm">
